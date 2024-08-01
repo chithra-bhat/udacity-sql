@@ -7,4 +7,3 @@
 - **Data Aggregation**: Techniques for summarizing data.
 - **Window Functions**: Advanced analytics functions.
 - **Performance Tuning**: Improving query performance.
-- **Advanced Features**: Stored procedures and custom functions.
