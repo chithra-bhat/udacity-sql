@@ -12,3 +12,6 @@
 ## Further Reading
 - [Database Normalization](https://www.itprotoday.com/sql-server/sql-by-design-why-you-need-database-normalization)
 - [No many-to-many relationships](https://stackoverflow.com/questions/7339143/why-no-many-to-many-relationships) 
+- [Full Outer Joins](https://www.w3resource.com/sql/joins/perform-a-full-outer-join.php)
+- [Use Cases](https://stackoverflow.com/questions/2094793/when-is-a-good-situation-to-use-a-full-outer-join)
+- 
