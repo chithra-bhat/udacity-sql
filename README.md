@@ -17,3 +17,5 @@
 - [UNION and UNION ALL](https://www.w3schools.com/sql/sql_union.asp)
 - [SELF JOIN](https://www.w3schools.com/sql/sql_join_self.asp)
 - [CROSS JOIN](https://www.w3resource.com/sql/joins/cross-join.php)
+- [DATE_TRUNC](https://mode.com/blog/date-trunc-sql-timestamp-function-count-on)
+- [DATE_PART](https://www.geeksforgeeks.org/postgresql-date_part-function/)
