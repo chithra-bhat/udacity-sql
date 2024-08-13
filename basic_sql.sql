@@ -7,6 +7,8 @@ SELECT occurred_at, account_id, channel
 FROM web_events
 LIMIT 15;
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # 2. ORDER BY 
 
 -- 1. Write a query to return the 10 earliest orders in the orders table. Include the id, occurred_at, and total_amt_usd.
@@ -30,6 +32,8 @@ FROM orders
 ORDER BY total_amt_usd
 LIMIT 20;
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # 3. ORDER BY II
 
 /* 1. Write a query that displays the order ID, account ID, and total dollar amount for all the orders, sorted first by the account ID  (in ascending order), and then by 
@@ -45,6 +49,8 @@ order), and then by account ID (in ascending order). */
 SELECT id, account_id, total_amt_usd
 FROM orders
 ORDER BY total_amt_usd DESC, account_id;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 4. WHERE
 
@@ -62,6 +68,8 @@ FROM orders
 WHERE total_amt_usd < 500
 LIMIT 10;
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # 5. WHERE with Non-Numeric Data
 
 -- Filter the accounts table to include the company name, website, and the primary point of contact (primary_poc) just for the Exxon Mobil company in the accounts table. 
@@ -69,6 +77,8 @@ LIMIT 10;
 SELECT name, website, primary_poc
 FROM accounts
 WHERE name = 'Exxon Mobil'
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 6. Arithmetic Operations
 
@@ -92,6 +102,8 @@ ROUND(poster_amt_usd/(standard_amt_usd + gloss_amt_usd + poster_amt_usd), 3) * 1
 FROM orders
 LIMIT 10;
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # 7. LIKE
 
 -- Use the accounts table to find
@@ -114,6 +126,8 @@ SELECT name
 FROM accounts
 WHERE name LIKE '%s';
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # 8. IN
 
 -- 1. Use the accounts table to find the account name, primary_poc, and sales_rep_id for Walmart, Target, and Nordstrom.
@@ -127,6 +141,8 @@ WHERE name IN ('Walmart', 'Target', 'Nordstrom');
 SELECT *
 FROM web_events
 WHERE channel IN ('organic' , 'adwords');
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 9. NOT 
 
@@ -161,6 +177,8 @@ SELECT name
 FROM accounts
 WHERE name NOT LIKE '%s';
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # 10. AND and BETWEEN
 
 -- 1. Write a query that returns all the orders where the standard_qty is over 1000, the poster_qty is 0, and the gloss_qty is 0.
@@ -189,6 +207,8 @@ FROM web_events
 WHERE channel IN ('organic', 'adwords') AND 
 occurred_at BETWEEN '01-01-2016' AND '01-01-2017'
 ORDER BY occurred_at DESC;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 11. OR
 
