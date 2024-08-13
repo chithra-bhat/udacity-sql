@@ -5,7 +5,7 @@
 ### Course 1
 - **SQL Basics**: Fundamental commands for data manipulation.
 - **Joins & Subqueries**: Combining and querying data across tables.
-- **Data Aggregation**: Techniques for summarizing data.
+- **Aggregations**: Techniques for summarizing data.
 - **Window Functions**: Advanced analytics functions.
 - **Performance Tuning**: Improving query performance.
 
@@ -19,3 +19,5 @@
 - [CROSS JOIN](https://www.w3resource.com/sql/joins/cross-join.php)
 - [DATE_TRUNC](https://mode.com/blog/date-trunc-sql-timestamp-function-count-on)
 - [DATE_PART](https://www.geeksforgeeks.org/postgresql-date_part-function/)
+- [Subqueries](https://learn.microsoft.com/en-us/sql/relational-databases/performance/subqueries?view=sql-server-ver15)
+- [Query Plans](https://www.essentialsql.com/what-is-a-query-plan/)
