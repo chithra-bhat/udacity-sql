@@ -474,4 +474,3 @@ JOIN sales_reps s
 ON a.sales_rep_id = s.id
 GROUP BY s.name
 ORDER BY 3 DESC;
-
