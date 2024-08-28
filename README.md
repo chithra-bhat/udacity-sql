@@ -21,3 +21,6 @@
 - [DATE_PART](https://www.geeksforgeeks.org/postgresql-date_part-function/)
 - [Subqueries](https://learn.microsoft.com/en-us/sql/relational-databases/performance/subqueries?view=sql-server-ver15)
 - [Query Plans](https://www.essentialsql.com/what-is-a-query-plan/)
+- [Optimization](https://dev.mysql.com/doc/refman/8.0/en/optimization.html)
+- [Window Functions](https://www.postgresql.org/docs/9.1/tutorial-window.html)
+- [OVER clause](https://blog.sqlauthority.com/2015/11/04/sql-server-what-is-the-over-clause-notes-from-the-field-101/)
