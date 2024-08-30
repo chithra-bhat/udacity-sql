@@ -13,6 +13,7 @@
 - [Database Normalization](https://www.itprotoday.com/sql-server/sql-by-design-why-you-need-database-normalization)
 - [No many-to-many relationships](https://stackoverflow.com/questions/7339143/why-no-many-to-many-relationships) 
 - [Full Outer Joins](https://www.w3resource.com/sql/joins/perform-a-full-outer-join.php)
+- [Full Outer Join Use Case](https://stackoverflow.com/questions/2094793/when-is-a-good-situation-to-use-a-full-outer-join)
 - [Use Cases](https://stackoverflow.com/questions/2094793/when-is-a-good-situation-to-use-a-full-outer-join)
 - [UNION and UNION ALL](https://www.w3schools.com/sql/sql_union.asp)
 - [SELF JOIN](https://www.w3schools.com/sql/sql_join_self.asp)
@@ -24,3 +25,5 @@
 - [Optimization](https://dev.mysql.com/doc/refman/8.0/en/optimization.html)
 - [Window Functions](https://www.postgresql.org/docs/9.1/tutorial-window.html)
 - [OVER clause](https://blog.sqlauthority.com/2015/11/04/sql-server-what-is-the-over-clause-notes-from-the-field-101/)
+- [SQL String Comparison](https://stackoverflow.com/questions/26080187/sql-string-comparison-greater-than-and-less-than-operators/26080240#26080240)
+- [DateTime Functions](https://www.postgresql.org/docs/8.2/functions-datetime.html)
