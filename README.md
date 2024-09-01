@@ -27,3 +27,4 @@
 - [OVER clause](https://blog.sqlauthority.com/2015/11/04/sql-server-what-is-the-over-clause-notes-from-the-field-101/)
 - [SQL String Comparison](https://stackoverflow.com/questions/26080187/sql-string-comparison-greater-than-and-less-than-operators/26080240#26080240)
 - [DateTime Functions](https://www.postgresql.org/docs/8.2/functions-datetime.html)
+- [UNION Operator](https://www.techonthenet.com/sql/union.php)
