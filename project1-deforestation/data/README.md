@@ -4,7 +4,7 @@ This project analyzes global deforestation data for ForestQuery, a non-profit de
 
 ### Steps to Complete
 
-1. **Create a View called “forestation”** by joining all three tables - `forest_area`, `land_area`, and `regions` in the workspace.
+1. Create a **View** called `forestation` by joining all three tables - `forest_area`, `land_area`, and `regions` in the workspace.
 
 2. **Join Criteria**:
    - The `forest_area` and `land_area` tables join on both `country_code` **AND** `year`.
