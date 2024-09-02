@@ -9,7 +9,7 @@ This project analyzes global deforestation data for ForestQuery, a non-profit de
 2. The `forest_area` and `land_area` tables join on both `country_code` **AND** `year`.
 3. The `regions` table joins these based on only `country_code`.
 
-4. In the ‘forestation’ View, include the following:
+4. In the `forestation` View, include the following:
    - All of the columns of the origin tables.
    - A new column that provides the percent of the land area that is designated as forest.
 
