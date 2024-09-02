@@ -2,7 +2,7 @@
 
 This project analyzes global deforestation data for ForestQuery, a non-profit dedicated to combat deforestation. The goal is to create a comprehensive report highlighting trends in forest area changes and regional impacts to guide strategic decisions and resource allocation.
 
-# Steps to Complete
+### Steps to Complete
 
 1. **Create a View called “forestation”** by joining all three tables - `forest_area`, `land_area`, and `regions` in the workspace.
 
