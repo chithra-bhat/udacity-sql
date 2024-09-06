@@ -1,5 +1,4 @@
-/* Create forestation View joining all three tables - forest_area, land_area, and regions. The forest_area and land_area tables join on both country_code AND year.
-The regions table joins these based on only country_code. */
+/* Create forestation View joining all three tables - forest_area, land_area, and regions. The forest_area and land_area tables join on both country_code AND year. The regions table joins these based on only country_code. */
 
 CREATE VIEW forestation AS 
 (
@@ -19,7 +18,7 @@ CREATE VIEW forestation AS
 	ON la.country_code = r.country_code
 )
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
 
 # Part 1 - Global Situation
 
@@ -55,6 +54,17 @@ forest_2016 AS
 SELECT forest_1990.forest_area_sqkm - forest_2016.forest_area_sqkm AS lost_forest_area
 FROM forest_1990, forest_2016
 
+
+-- OR We can use SELF JOIN to get the same result
+
+SELECT 
+  f1.forest_area_sqkm - f2.forest_area_sqkm AS lost_forest_area
+FROM forestation f1
+JOIN forestation f2
+ON f1.country_name = f2.country_name 
+AND f1.year = 1990 AND f2.year = 2016
+WHERE f1.country_name = 'World';
+
 -- d. What was the percent change in forest area of the world between 1990 and 2016?
 
 WITH forest_1990 AS (
@@ -73,9 +83,22 @@ SELECT
 		CAST(
 				(f1990.forest_area_sqkm - f2016.forest_area_sqkm) / f1990.forest_area_sqkm * 100.0 AS NUMERIC
 			), 
-		2) AS percent_change
+		2) AS pct_forest_lost
 FROM forest_1990 f1990, forest_2016 f2016 
-    
+
+-- OR We can use SELF JOIN to get the same result
+
+SELECT 
+  ROUND(
+    CAST(
+          (f1.forest_area_sqkm - f2.forest_area_sqkm) / f1.forest_area_sqkm AS NUMERIC) * 100, 
+    2) AS pct_forest_lost
+FROM forestation f1
+JOIN forestation f2
+ON f1.country_name = f2.country_name 
+AND f1.year = 1990 AND f2.year = 2016
+WHERE f1.country_name = 'World';
+
 
 -- e. If you compare the amount of forest area lost between 1990 and 2016, to which country's total area in 2016 is it closest to?
 
@@ -112,7 +135,7 @@ WHERE year = 2016
 ORDER BY 3
 LIMIT 1;
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
 
 # Part 2 - Regional Outlook 
 
@@ -206,7 +229,7 @@ ON r1.region = r2.region
 WHERE r1.forest_1990 > r2.forest_2016
 AND r1.region != 'World';
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
 
 # Part 3 - Country-Level Detail 
 
