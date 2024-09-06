@@ -22,6 +22,7 @@
 - [DATE_TRUNC](https://mode.com/blog/date-trunc-sql-timestamp-function-count-on)
 - [DATE_PART](https://www.geeksforgeeks.org/postgresql-date_part-function/)
 - [Subqueries](https://learn.microsoft.com/en-us/sql/relational-databases/performance/subqueries?view=sql-server-ver15)
+- [More on Subqueries](https://mode.com/sql-tutorial/sql-sub-queries)
 - [CASE Statement](https://mode.com/sql-tutorial/sql-case#the-sql-case-statement)
 - [Query Plans](https://www.essentialsql.com/what-is-a-query-plan/)
 - [Optimization](https://dev.mysql.com/doc/refman/8.0/en/optimization.html)
